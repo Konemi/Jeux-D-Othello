@@ -5,7 +5,7 @@
  */
 public class PartieDOthello
 {
-
+// TODO plateau et autre concept
 	/**
 	 * Exécute tour de jeu tant que ce n'est pas la fin de la partie
 	 */
@@ -21,7 +21,6 @@ public class PartieDOthello
 	 */
 	private void jouerUnTour() 
 	{
-		// TODO Auto-generated method stub
 		
 	}
 
@@ -31,7 +30,14 @@ public class PartieDOthello
 	 */
 	public boolean finDeLaPartie()
 	{
-		return false;		
+		if (nombreCaseVide == 0 || nombreCasePossible == 0)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
 	}
 	
 }
