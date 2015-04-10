@@ -39,18 +39,6 @@ public class OthelloGame
 	 */
 	private void playTheRound() 
 	{
-		int lineCounter,columnCounter;
-		for (lineCounter=0 ; lineCounter < Board.NB_SQUARE ; lineCounter++)
-		{
-			for (columnCounter=0 ; columnCounter < Board.NB_SQUARE ; columnCounter++)
-			{
-				if (Board.board[lineCounter][columnCounter] == none)
-				{
-					this.endOfGame = 
-				}
-				
-			}
-		}
 		
 	}
 }

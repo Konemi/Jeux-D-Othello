@@ -33,9 +33,23 @@ public class Board {
 		// ...
 	}
 
+	/**
+	 * serching for one or more empty cells
+	 * @return false if at least one cell is empty
+	 */
 	public boolean hasNoEmptyCell() {
-		// TODO Auto-generated method stub
-		return false;
+		int lineCounter,columnCounter;
+		for (lineCounter=0 ; lineCounter < Board.NB_SQUARE ; lineCounter++)
+		{
+			for (columnCounter=0 ; columnCounter < Board.NB_SQUARE ; columnCounter++)
+			{
+				if (this.board[lineCounter][columnCounter] == none)
+				{
+					return false;
+				}				
+			}
+		}
+		return true;
 	}
 	
 	
