@@ -3,9 +3,9 @@
  * @author omelj
  *
  */
-public enum Disks 
+public enum Disk 
 {
 	light,
 	dark,
-	none;
+	none; //no dicks in the array
 }

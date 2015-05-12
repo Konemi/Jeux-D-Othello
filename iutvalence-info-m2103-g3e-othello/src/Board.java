@@ -23,14 +23,21 @@ public class Board {
 	/**
 	 * The board data structure that will contain disks
 	 */
-	private int [][] board;
+	private Disk [][] board;
 
 	/**
 	 * Creates a new board, with default size and containing the four initial disks
 	 */
 	public Board()
 	{
-		// ...
+		this.board = new Disk [NB_LINE][NB_COLUMN];
+		for (int lineCounter = 0 ; lineCounter < this.NB_SQUARE ; lineCounter++)
+		{
+			for (int columnCounter = 0 ; columnCounter < this.NB_SQUARE ; columnCounter++)
+			{
+				this.board[lineCounter][columnCounter] = Disk.none;			
+			}
+		}
 	}
 
 	/**
@@ -39,11 +46,11 @@ public class Board {
 	 */
 	public boolean hasNoEmptyCell() {
 		int lineCounter,columnCounter;
-		for (lineCounter=0 ; lineCounter < Board.NB_SQUARE ; lineCounter++)
+		for (lineCounter=0 ; lineCounter < this.NB_SQUARE ; lineCounter++)
 		{
-			for (columnCounter=0 ; columnCounter < Board.NB_SQUARE ; columnCounter++)
+			for (columnCounter=0 ; columnCounter < this.NB_SQUARE ; columnCounter++)
 			{
-				if (this.board[lineCounter][columnCounter] == none)
+				if (this.board[lineCounter][columnCounter] == Disk.none)
 				{
 					return false;
 				}				

@@ -7,7 +7,9 @@ public class OthelloGame
 {	
 	private Board board;
 	
-	
+	/**
+	 * Game's board
+	 */
 	public OthelloGame()
 	{
 		this.board = new Board();
@@ -20,15 +22,25 @@ public class OthelloGame
 	{
 		while (!this.isEndOfGame())
 		{
-			playTheRound();
+			this.playTheRound();
 		}
 	}
-	private boolean isEndOfGame() {
+	
+	/**
+	 * Determine if it is the end of the game
+	 * @return false if the game isn't over
+	 */
+	private boolean isEndOfGame()
+	{
 		if (this.board.hasNoEmptyCell()) return true;
 		if (this.getPossibleMoveCount() == 0) return true;
 		return false;
 		
 	}
+	
+	/**
+	 * @return Number of possible movement
+	 */
 	private int getPossibleMoveCount() {
 		// TODO Auto-generated method stub
 		return 0;
