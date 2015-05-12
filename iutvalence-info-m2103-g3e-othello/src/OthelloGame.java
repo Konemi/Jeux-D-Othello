@@ -5,10 +5,13 @@
  */
 public class OthelloGame
 {	
+	/**
+	 *  Game's board
+	 */
 	private Board board;
 	
 	/**
-	 * Game's board
+	 * initialization of the Game's board
 	 */
 	public OthelloGame()
 	{

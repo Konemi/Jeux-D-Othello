@@ -27,6 +27,7 @@ public class Board {
 
 	/**
 	 * Creates a new board, with default size and containing the four initial disks
+	 * @author Quennevb
 	 */
 	public Board()
 	{
@@ -38,6 +39,11 @@ public class Board {
 				this.board[lineCounter][columnCounter] = Disk.none;			
 			}
 		}
+		//Initialization of the four initial disks at the center
+		this.board[3][3] = Disk.light;
+		this.board[3][4] = Disk.dark;	
+		this.board[4][3] = Disk.light;	
+		this.board[4][4] = Disk.dark;	
 	}
 
 	/**
@@ -57,6 +63,11 @@ public class Board {
 			}
 		}
 		return true;
+	}
+
+	public Disk[][] getBoard()
+	{
+		return board;
 	}
 	
 	
