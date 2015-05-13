@@ -34,13 +34,15 @@ public class Player
 	
 	
 	/**
-	 * @param line
-	 * @param column
-	 * @param board
+	 * Put a disk on the board
+	 * @param board 
+	 * @param line line of the array
+	 * @param column column of the array
 	 */
-	public void putDisk(Board board, Disk[][] boardArray)
+	public void putDisk(Board board, int line, int column)
 	{
-		board.getBoard = boardArray;
+		board.setArray(this.PLAYER_COLOR,line, column);
+		//TODO modification of the other disks already on the board
 	}
 	
 	

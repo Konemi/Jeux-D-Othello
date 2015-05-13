@@ -25,7 +25,7 @@ public class OthelloGame
 	{
 		while (!this.isEndOfGame())
 		{
-			this.playTheRound();
+			
 		}
 	}
 	
@@ -44,16 +44,21 @@ public class OthelloGame
 	/**
 	 * @return Number of possible movement
 	 */
-	private int getPossibleMoveCount() {
-		// TODO Auto-generated method stub
+	private int getPossibleMoveCount()
+	{
+		// TODO à remplir
 		return 0;
 	}
-
+	
 	/**
-	 * Game round's process
+	 * 
+	 * @param line line of the array
+	 * @param column line of the array
+	 *  @return true if the movement is possible
 	 */
-	private void playTheRound() 
+	private boolean getPossibleMove(int line, int column)
 	{
-		
+		//TODO à finir
 	}
+	
 }

@@ -65,9 +65,13 @@ public class Board {
 		return true;
 	}
 
-	public Disk[][] getBoard()
+	/**
+	 * Put a disk on the board
+	 * @param board
+	 */
+	public void setArray(Disk disk, int line, int column)
 	{
-		return board;
+		this.board[line][column] = disk;
 	}
 	
 	
