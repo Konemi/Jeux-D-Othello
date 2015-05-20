@@ -9,13 +9,25 @@ public class OthelloGame
 	 *  Game's board
 	 */
 	private Board board;
+	/**
+	 *  Player 1
+	 */
+	private Player player1;
+	/**
+	 *  Player 2
+	 */
+	private Player player2;
+	private final int <Position> listPosition = {{1,-1},{1,0},{1,1},{0,1},{-1,1},{0,-1},{-1,-1},{-1,0}};
+	
 	
 	/**
 	 * initialization of the Game's board
 	 */
-	public OthelloGame()
+	public OthelloGame(Player player1, Player player2)
 	{
 		this.board = new Board();
+		this.player1 = player1;
+		this.player2 = player2;
 	}
 	
 	/**
@@ -56,9 +68,13 @@ public class OthelloGame
 	 * @param column line of the array
 	 *  @return true if the movement is possible
 	 */
-	private boolean getPossibleMove(int line, int column)
+	private boolean isMovePossible(Position position)
 	{
-		//TODO à finir
+		if (this.board.getDisk(this.board, position) != Disk.none)
+				{
+					return false;
+				}
+		return true;
 	}
 	
 }
