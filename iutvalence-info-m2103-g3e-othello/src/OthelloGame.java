@@ -120,6 +120,9 @@ public class OthelloGame
 	
 	/**
 	 * flip every disks from the initial position to the final position
+	 * @param player the current player
+	 * @param initialPosition initial position
+	 * @param finalPositions a list of position used to delimited which disks to flip
 	 */
 	public void flippingDisks(Player player, Position initialPosition, List<Position> finalPositions)
 	{
